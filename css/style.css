@@ -1,0 +1,43 @@
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    background-color: rgb(104, 182, 228);
+    color: white;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 70px;   
+}
+
+.buscar {
+    background-color: rgb(104, 182, 228);
+    color: white;
+    border: 2px solid rgb(86, 167, 214);
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
