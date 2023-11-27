@@ -13,15 +13,41 @@
     <div class="head">
         <h2>BuscaCEP</h2>
         <img src="https://static.vecteezy.com/system/resources/previews/012/174/337/original/simple-magnifying-icon-png.png">
-
     </div>
     <div class="body">
-        <form action="/" method="post">
-            <label class="label" for="cep">Digite o CEP:</label>
-            <input type="text" name="cep" id="cep" placeholder="00000000">
-            <input class="buscar" type="submit" value="Buscar">
+        <form id="cepForm">
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o CEP" class="highlight">
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" readonly>
+            </div>
+            <div class="form-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" readonly>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" readonly>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localidade:</label>
+                <input type="text" id="localidade" name="localidade" readonly>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <input type="text" id="uf" name="uf" readonly>
+            </div>
+            <div class="form-group">
+                <label for="ddd">DDD:</label>
+                <input type="text" id="ddd" name="ddd" readonly>
+            </div>
+            <div class="botao">
+            <button type="button" onclick="buscarCEP()">Buscar</button>
+            </div>
         </form>
-        <div id="resultados"></div>
     </div>
     <div class="footer"></div>
 </body>
